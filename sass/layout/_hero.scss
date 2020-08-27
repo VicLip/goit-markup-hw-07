@@ -1,0 +1,54 @@
+/* HERO СЕКЦИЯ */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* временный background
+  background: var(--background); */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header/header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--logo-text-color);
+  max-width: 1600px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
