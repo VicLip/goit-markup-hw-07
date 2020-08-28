@@ -4,21 +4,12 @@
   display: flex;
 }
 
-.about-us-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .about-us-list-item {
   position: relative;
-}
 
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-subtitle {
@@ -36,6 +27,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   background: rgba(47, 48, 58, 0.8);
 }

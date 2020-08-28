@@ -2,7 +2,7 @@
 
 .about-us-bg {
   display: flex;
-  background: var(--background);
+  background: $background;
   height: 120px;
   margin-bottom: 30px;
   align-items: center;
@@ -34,7 +34,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-bottom: 10px;
 }
 
@@ -43,5 +43,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }

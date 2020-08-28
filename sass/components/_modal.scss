@@ -18,7 +18,7 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary-text-color);
+  background-color: $secondary-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -37,12 +37,12 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .modal-close-svg {
@@ -57,7 +57,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-bottom: 30px;
 }
 
@@ -79,7 +79,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -90,9 +90,10 @@
   transform: translate(50%, 50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-form-input:focus ~ .modal-icon-svg,
 .modal-form-input:not(:placeholder-shown) ~ .modal-icon-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-form-input:focus,
@@ -100,7 +101,7 @@
 .modal-form-input:not(:placeholder-shown),
 .modal-form-comment:not(:placeholder-shown) {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal-form-label {
@@ -112,7 +113,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   padding-left: 42px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -121,7 +122,7 @@
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   transform: translateY(-40px);
   left: -30px;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .modal-form-comment {
@@ -132,7 +133,7 @@
 }
 
 .modal-form-comment:focus::placeholder {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .modal-form-option-span {
@@ -141,12 +142,12 @@
   line-height: 1.71px;
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
+  color: $primary-text-color;
 
-.modal-form-option-span a {
-  text-decoration: underline;
-  color: var(--accent-color);
+  a {
+    text-decoration: underline;
+    color: $accent-color;
+  }
 }
 
 .modal-form-option-label {
@@ -172,19 +173,19 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $title-text-color;
   border-radius: 3px;
   margin-right: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: $accent-color;
+  border-color: $accent-color;
 }
 
 .modal-checkbox-svg {
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
 }
 
 .modal-form-btn {
@@ -198,8 +199,8 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  color: $secondary-text-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;

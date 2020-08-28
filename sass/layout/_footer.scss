@@ -1,23 +1,8 @@
 /* ПОДВАЛ */
 
 .footer {
-  background-color: var(--footer-background);
+  background-color: $footer-background;
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin-bottom: 8px;
-}
-
-.footer-logo > span {
-  color: var(--accent-color);
 }
 
 .footer-address-item .address-link {
@@ -28,7 +13,7 @@
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .footer-address-item:not(:last-child) {
@@ -44,10 +29,10 @@
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-addres-link:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-utils {
@@ -61,7 +46,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   margin-bottom: 20px;
 }
 
@@ -73,14 +58,14 @@
 
 .footer-links-list {
   display: flex;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-section {
   margin-right: 69px;
-}
-
-.footer-links-list li:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-social-links {
@@ -91,14 +76,14 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social-links:hover,
-.footer-social-links:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .form-mail-input {
@@ -126,8 +111,8 @@
   text-align: center;
   justify-content: center;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  color: $secondary-text-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -136,6 +121,6 @@
 }
 
 .mail-btn-svg {
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
   margin-left: 10px;
 }
